@@ -14,4 +14,9 @@ Spree::PermittedAttributes.class_eval do
       :_destroy
     ]
   ]
+  self.checkout_attributes << [
+    :bill_address_id,
+    :ship_address_id
+  ]
+
 end
